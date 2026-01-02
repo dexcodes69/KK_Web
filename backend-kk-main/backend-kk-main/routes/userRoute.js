@@ -1,0 +1,10 @@
+import express from 'express';
+import { loginUser, registerUser, adminLogin, subscribeNewsletter, getUserAddress } from '../controllers/userController.js';
+
+const userRouter = express.Router();
+userRouter.get('/get-address', getUserAddress);
+userRouter.post('/register',registerUser)
+userRouter.post('/login',loginUser)
+userRouter.post('/admin',adminLogin)
+userRouter.post('/subscribe', subscribeNewsletter);
+export default userRouter;
