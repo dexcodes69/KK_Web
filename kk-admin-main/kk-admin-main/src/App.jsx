@@ -10,7 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // Separate URLs for standard data and the scraper
-export const backendUrl = "http://localhost:5001" 
+export const backendUrl = "https://kk-web-wmmn.onrender.com" 
 export const scraperUrl = "http://localhost:8000" 
 export const currency = '₹'
 
